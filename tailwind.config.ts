@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,13 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+        dsrv: {
+          'blue': '#1E88E5',
+          'blue-light': '#64B5F6',
+          'green': '#2E7D32',
+          'green-light': '#81C784',
+        }
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,12 +91,42 @@ export default {
 					to: {
 						height: '0'
 					}
-				}
+				},
+        'wave': {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(100%)' }
+        },
+        'fade-in': {
+          '0%': { opacity: '0', transform: 'translateY(10px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' }
+        },
+        'float': {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-10px)' }
+        },
+        'spin-slow': {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' }
+        },
+        'bubble': {
+          '0%': { transform: 'scale(0)', opacity: '0' },
+          '50%': { opacity: '1' },
+          '100%': { transform: 'scale(1.5)', opacity: '0' }
+        }
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
-			}
+				'accordion-up': 'accordion-up 0.2s ease-out',
+        'wave': 'wave 2s ease-in-out infinite',
+        'fade-in': 'fade-in 0.6s ease-out forwards',
+        'float': 'float 3s ease-in-out infinite',
+        'spin-slow': 'spin-slow 8s linear infinite',
+        'bubble': 'bubble 3s ease-in-out infinite'
+			},
+      backgroundImage: {
+        'wave-pattern': "url(\"data:image/svg+xml,%3Csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cpattern id='wave' x='0' y='0' width='120' height='20' patternUnits='userSpaceOnUse'%3E%3Cpath d='M-36 10C-30 5 -24 0 -18 0C-12 0 -6 5 0 10C6 15 12 20 18 20C24 20 30 15 36 10C42 5 48 0 54 0C60 0 66 5 72 10' stroke='%231E88E5' fill='none' stroke-width='2'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23wave)'/%3E%3C/svg%3E\")",
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+      }
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
