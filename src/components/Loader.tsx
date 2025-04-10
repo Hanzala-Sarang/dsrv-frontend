@@ -39,10 +39,6 @@ const Loader: React.FC = () => {
         </div>
       </div>
       
-      <div className="text-lg font-medium text-dsrv-blue">
-        Loading a cleaner experience...
-      </div>
-      
       {/* Progress bar */}
       <div className="w-60 h-1 mt-4 bg-gray-200 rounded-full overflow-hidden">
         <div 

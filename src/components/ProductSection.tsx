@@ -43,7 +43,7 @@ const ProductSection: React.FC = () => {
             <div className="relative">
               <div className="relative z-10 overflow-hidden rounded-2xl shadow-lg">
                 <img 
-                  src="/placeholder.svg" 
+                  src="/placeholder.jpg" 
                   alt="DSRV Detergent Powder" 
                   className="w-full h-auto"
                 />

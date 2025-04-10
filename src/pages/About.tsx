@@ -81,7 +81,7 @@ const About = () => {
             <div className="w-full md:w-1/2 mb-8 md:mb-0">
               <div className="relative">
                 <img 
-                  src="/placeholder.svg" 
+                  src="/labs.png" 
                   alt="DSRV Labs" 
                   className="w-full h-auto rounded-lg shadow-lg"
                 />
@@ -213,7 +213,7 @@ const About = () => {
               <div className="relative overflow-hidden rounded-lg shadow-lg h-80">
                 {/* This would ideally be a map */}
                 <div className="absolute inset-0 bg-gray-200 flex items-center justify-center">
-                  <p className="text-gray-600">Map Location</p>
+                <img src="/maps.png" alt="" />
                 </div>
               </div>
             </div>

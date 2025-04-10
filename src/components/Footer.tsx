@@ -58,8 +58,7 @@ const Footer: React.FC = () => {
                 { text: 'Home', link: '/' },
                 { text: 'About Us', link: '/about' },
                 { text: 'Let\'s Connect', link: '/contact' },
-                { text: 'FAQs', link: '#' },
-                { text: 'Privacy Policy', link: '#' },
+
               ].map((item, index) => (
                 <li key={index}>
                   <Link 

@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -20,22 +19,22 @@ const HeroSection: React.FC = () => {
         {/* Text content */}
         <div className="w-full lg:w-1/2 text-center lg:text-left mb-12 lg:mb-0 z-10">
           <h1 className={cn(
-            "text-4xl md:text-5xl lg:text-6xl font-bold mb-6 opacity-0 transition-all duration-700",
-            loaded && "opacity-100"
+            "text-4xl md:text-5xl lg:text-6xl font-bold mb-6 opacity-0 transform transition-all duration-700",
+            loaded && "opacity-100 translate-y-0"
           )}>
             <span className="text-dsrv-blue">Clean</span> & <span className="text-dsrv-green">Fresh</span> Wash Every Time
           </h1>
           
           <p className={cn(
-            "text-lg text-gray-600 mb-8 max-w-xl mx-auto lg:mx-0 opacity-0 transition-all duration-700 delay-300",
-            loaded && "opacity-100"
+            "text-lg text-gray-600 mb-8 max-w-xl mx-auto lg:mx-0 opacity-0 transform transition-all duration-700 delay-300",
+            loaded && "opacity-100 translate-y-0"
           )}>
             DSRV detergent delivers powerful cleaning with advanced stain removal technology, keeping your clothes bright, fresh, and spotless.
           </p>
           
           <div className={cn(
-            "space-x-4 opacity-0 transition-all duration-700 delay-500",
-            loaded && "opacity-100"
+            "space-x-4 opacity-0 transform transition-all duration-700 delay-500",
+            loaded && "opacity-100 translate-y-0"
           )}>
             <Link to="/contact" className="inline-flex items-center px-6 py-3 rounded-lg bg-dsrv-blue text-white font-medium hover:bg-dsrv-blue/90 transition-colors">
               Try Now
@@ -50,13 +49,13 @@ const HeroSection: React.FC = () => {
         
         {/* Image */}
         <div className={cn(
-          "w-full lg:w-1/2 relative opacity-0 transition-all duration-700 delay-700",
-          loaded && "opacity-100"
+          "w-full lg:w-1/2 relative opacity-0 transform transition-all duration-700 delay-700",
+          loaded && "opacity-100 translate-y-0"
         )}>
           <div className="relative mx-auto w-full max-w-md">
             {/* Product image */}
             <img 
-              src="/placeholder.svg" 
+              src="/placeholder.jpg" 
               alt="DSRV Detergent Powder" 
               className="relative z-10 animate-float"
             />

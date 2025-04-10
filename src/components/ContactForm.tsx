@@ -8,6 +8,7 @@ const ContactForm: React.FC = () => {
   const [formState, setFormState] = useState({
     name: '',
     email: '',
+    phone: '',
     message: '',
   });
   const [loading, setLoading] = useState(false);
@@ -16,28 +17,55 @@ const ContactForm: React.FC = () => {
     const { name, value } = e.target;
     setFormState((prev) => ({ ...prev, [name]: value }));
   };
-
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
-    
-    // Simulate form submission
-    setTimeout(() => {
-      setLoading(false);
+  
+    try {
+      const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/contact`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formState),
+      });
+  
+      const data = await response.json();
+  
+      if (response.ok) {
+        toast({
+          title: "Message sent successfully!",
+          description: "We'll get back to you as soon as possible.",
+          duration: 5000,
+        });
+  
+        setFormState({
+          name: '',
+          email: '',
+          phone: '',
+          message: '',
+        });
+      } else {
+        toast({
+          title: "Failed to send message",
+          description: data.error || "Something went wrong. Please try again later.",
+          variant: "destructive",
+          duration: 5000,
+        });
+      }
+    } catch (error) {
+      console.error("Error:", error);
       toast({
-        title: "Message sent successfully!",
-        description: "We'll get back to you as soon as possible.",
+        title: "Server Error",
+        description: "Unable to send message. Please try again later.",
+        variant: "destructive",
         duration: 5000,
       });
-      
-      // Reset form
-      setFormState({
-        name: '',
-        email: '',
-        message: '',
-      });
-    }, 1500);
+    } finally {
+      setLoading(false);
+    }
   };
+  
 
   return (
     <form onSubmit={handleSubmit} className="bg-white rounded-xl p-6 shadow-lg relative overflow-hidden">
@@ -61,7 +89,7 @@ const ContactForm: React.FC = () => {
               onChange={handleChange}
               required
               className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-dsrv-blue focus:border-transparent transition-all"
-              placeholder="John Doe"
+              placeholder="Name"
             />
           </div>
           
@@ -77,10 +105,24 @@ const ContactForm: React.FC = () => {
               onChange={handleChange}
               required
               className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-dsrv-blue focus:border-transparent transition-all"
-              placeholder="john@example.com"
+              placeholder="abc@example.com"
             />
           </div>
-          
+          <div>
+            <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
+              Phone Number
+            </label>
+            <input
+            type="tel"
+              id="phone"
+              name="phone"
+              value={formState.phone}
+              onChange={handleChange}
+              required
+              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-dsrv-blue focus:border-transparent transition-all"
+              placeholder="+91 99925 11144"
+            />
+          </div>
           <div>
             <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
               Your Message
