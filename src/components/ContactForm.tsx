@@ -145,7 +145,7 @@ const ContactForm: React.FC = () => {
               "w-full py-3 px-4 rounded-md text-white font-medium transition-all",
               loading
                 ? "bg-gray-400 cursor-not-allowed"
-                : "bg-gradient-to-r from-dsrv-blue to-dsrv-green hover:opacity-90"
+                : "bg-[#00B2A9] hover:opacity-90"
             )}
             disabled={loading}
           >

@@ -14,34 +14,34 @@ const HeroSection: React.FC = () => {
   }, []);
 
   return (
-    <section className="relative min-h-screen pt-20 overflow-hidden wave-bg">
+    <section className="relative min-h-screen pt-20 overflow-hidden bg-[#00B2A9]">
       <div className="container mx-auto px-4 pt-16 pb-24 flex flex-col lg:flex-row items-center">
         {/* Text content */}
         <div className="w-full lg:w-1/2 text-center lg:text-left mb-12 lg:mb-0 z-10">
           <h1 className={cn(
-            "text-4xl md:text-5xl lg:text-6xl font-bold mb-6 opacity-0 transform transition-all duration-700",
+            "text-4xl md:text-5xl lg:text-6xl font-bold mb-6 opacity-0 transform transition-all duration-700 text-white",
             loaded && "opacity-100 translate-y-0"
           )}>
-            <span className="text-dsrv-blue">Clean</span> & <span className="text-dsrv-green">Fresh</span> Wash Every Time
+            <span className="text-white">Clean</span> & <span className="text-gray-200">Fresh</span> Wash Every Time
           </h1>
           
           <p className={cn(
-            "text-lg text-gray-600 mb-8 max-w-xl mx-auto lg:mx-0 opacity-0 transform transition-all duration-700 delay-300",
+            "text-lg text-gray-100 mb-8 max-w-xl mx-auto lg:mx-0 opacity-0 transform transition-all duration-700 delay-300",
             loaded && "opacity-100 translate-y-0"
           )}>
-            DSRV detergent delivers powerful cleaning with advanced stain removal technology, keeping your clothes bright, fresh, and spotless.
+            Dhomore detergent delivers powerful cleaning with advanced stain removal technology, keeping your clothes bright, fresh, and spotless.
           </p>
           
           <div className={cn(
             "space-x-4 opacity-0 transform transition-all duration-700 delay-500",
             loaded && "opacity-100 translate-y-0"
           )}>
-            <Link to="/contact" className="inline-flex items-center px-6 py-3 rounded-lg bg-dsrv-blue text-white font-medium hover:bg-dsrv-blue/90 transition-colors">
+            <Link to="/contact" className="inline-flex items-center px-6 py-3 rounded-lg bg-white text-[#00B2A9] font-medium hover:bg-gray-100 transition-colors">
               Try Now
               <ArrowRight size={16} className="ml-2" />
             </Link>
             
-            <Link to="/about" className="inline-flex items-center px-6 py-3 rounded-lg border border-dsrv-blue text-dsrv-blue font-medium hover:bg-dsrv-blue/10 transition-colors">
+            <Link to="/about" className="inline-flex items-center px-6 py-3 rounded-lg border border-white text-white font-medium hover:bg-white/10 transition-colors">
               Learn More
             </Link>
           </div>
@@ -61,7 +61,7 @@ const HeroSection: React.FC = () => {
             />
             
             {/* Background Effect */}
-            <div className="absolute -inset-4 bg-gradient-radial from-dsrv-blue-light/20 to-transparent rounded-full z-0"></div>
+            <div className="absolute -inset-4 bg-gradient-radial from-white/20 to-transparent rounded-full z-0"></div>
             
             {/* Circular shine effect */}
             <div className="absolute top-1/4 left-1/4 w-6 h-6 bg-white rounded-full opacity-70 blur-sm z-20"></div>

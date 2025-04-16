@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
               <Logo />
             </Link>
             <p className="text-gray-600 mb-6">
-              Premium quality detergent for a superior cleaning experience. DSRV keeps your clothes fresh, bright, and stain-free.
+              Premium quality detergent for a superior cleaning experience. Dhomore keeps your clothes fresh, bright, and stain-free.
             </p>
             <div className="flex space-x-4">
               {/* Social icons */}
@@ -78,11 +78,9 @@ const Footer: React.FC = () => {
             <h4 className="text-lg font-semibold mb-4">Products</h4>
             <ul className="space-y-2">
               {[
-                'DSRV Detergent Powder',
-                'DSRV Liquid Detergent',
-                'DSRV Stain Remover',
-                'DSRV Fabric Softener',
-                'DSRV Color Protection',
+                'Dhomore Detergent Powder',
+                'Dhomore Liquid Detergent',
+                'Dhomore Mosquito Incense Stick'
               ].map((item, index) => (
                 <li key={index}>
                   <a 

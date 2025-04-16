@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -12,32 +11,32 @@ const Contact = () => {
     const timer = setTimeout(() => {
       setLoaded(true);
     }, 100);
-    
+   
     return () => clearTimeout(timer);
   }, []);
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-white">
       <Navbar />
-      
+     
       {/* Hero Section */}
-      <section className="pt-28 pb-20 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
+      <section className="pt-28 pb-20 bg-[#01B3A9] relative overflow-hidden">
         <div className="container mx-auto px-4">
           <div className={cn(
             "max-w-3xl mx-auto text-center opacity-0 translate-y-8 transition-all duration-1000",
             loaded && "opacity-100 translate-y-0"
           )}>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Let's Connect</h1>
-            <p className="text-xl text-gray-600 mb-8">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">Let's Connect</h1>
+            <p className="text-xl text-white mb-8">
               Have questions or suggestions? We'd love to hear from you!
             </p>
           </div>
         </div>
-        
+       
         {/* Wave background */}
-        <div className="absolute bottom-0 left-0 right-0 h-20 bg-wave-pattern opacity-5"></div>
+        <div className="absolute bottom-0 left-0 right-0 h-20 bg-wave-pattern opacity-10"></div>
       </section>
-      
+     
       {/* Contact Details */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
@@ -49,28 +48,26 @@ const Contact = () => {
             )}>
               <ContactForm />
             </div>
-            
+           
             {/* Contact Info */}
             <div className={cn(
               "w-full lg:w-2/5 opacity-0 translate-y-8 transition-all duration-1000 delay-500",
               loaded && "opacity-100 translate-y-0"
             )}>
-              <div className="bg-gray-50 rounded-xl p-8 shadow-md h-full">
-                <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
-                
+              <div className="bg-[#01B3A9] rounded-xl p-8 shadow-md h-full">
+                <h3 className="text-2xl font-bold mb-6 text-white">Contact Information</h3>
+               
                 <div className="space-y-8">
                   <div className="flex">
-                    <div className="flex-shrink-0 w-12 h-12 rounded-full bg-dsrv-blue/10 flex items-center justify-center mr-4 text-dsrv-blue">
+                    <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white/20 flex items-center justify-center mr-4 text-white">
                       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                       </svg>
                     </div>
                     <div>
-                      <h4 className="text-lg font-semibold mb-2">Our Address</h4>
-                      <p className="text-gray-600">
-                        DETERGENT POWDER<br />
-                        DHOMORE<br />
+                      <h4 className="text-lg font-semibold mb-2 text-white">Our Address</h4>
+                      <p className="text-white/90">
                         DSRV & Co.<br />
                         PO & PS Dankuni coal complex<br />
                         Village-kharial<br />
@@ -78,51 +75,50 @@ const Contact = () => {
                       </p>
                     </div>
                   </div>
-                  
+                 
                   <div className="flex">
-                    <div className="flex-shrink-0 w-12 h-12 rounded-full bg-dsrv-green/10 flex items-center justify-center mr-4 text-dsrv-green">
+                    <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white/20 flex items-center justify-center mr-4 text-white">
                       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                       </svg>
                     </div>
                     <div>
-                      <h4 className="text-lg font-semibold mb-2">Email</h4>
-                      <p className="text-gray-600">
-                        <a href="mailto:sales.dsrv.in" className="text-dsrv-blue hover:underline">
+                      <h4 className="text-lg font-semibold mb-2 text-white">Email</h4>
+                      <p className="text-white/90">
+                        <a href="mailto:sales.dsrv.in" className="text-white hover:underline">
                           sales.dsrv.in
                         </a>
                       </p>
-                      <p className="text-gray-500 mt-2 text-sm">
+                      <p className="text-white/80 mt-2 text-sm">
                         We'll respond to your inquiry within 24 hours.
                       </p>
                     </div>
                   </div>
-                  
+                 
                   <div className="flex">
-                    <div className="flex-shrink-0 w-12 h-12 rounded-full bg-dsrv-blue/10 flex items-center justify-center mr-4 text-dsrv-blue">
+                    <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white/20 flex items-center justify-center mr-4 text-white">
                       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                       </svg>
                     </div>
                     <div>
-                      <h4 className="text-lg font-semibold mb-2">Business Hours</h4>
-                      <div className="space-y-1 text-gray-600">
-                        <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
-                        <p>Saturday: 10:00 AM - 4:00 PM</p>
+                      <h4 className="text-lg font-semibold mb-2 text-white">Business Hours</h4>
+                      <div className="space-y-1 text-white/90">
+                        <p>Monday - Saturday </p>
                         <p>Sunday: Closed</p>
                       </div>
                     </div>
                   </div>
                 </div>
-                
-                <div className="mt-8 pt-8 border-t border-gray-200">
-                  <h4 className="text-lg font-semibold mb-4">Follow Us</h4>
+               
+                <div className="mt-8 pt-8 border-t border-white/20">
+                  <h4 className="text-lg font-semibold mb-4 text-white">Follow Us</h4>
                   <div className="flex space-x-4">
                     {['facebook', 'twitter', 'instagram', 'linkedin'].map((social) => (
-                      <a 
-                        key={social} 
-                        href="#" 
-                        className="w-10 h-10 rounded-full bg-white shadow-sm flex items-center justify-center text-gray-600 hover:text-dsrv-blue transition-colors"
+                      <a
+                        key={social}
+                        href="#"
+                        className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-[#01B3A9] hover:bg-white/90 transition-colors"
                       >
                         <span className="sr-only">{social}</span>
                         <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -140,7 +136,8 @@ const Contact = () => {
           </div>
         </div>
       </section>
-      
+
+  
       <Footer />
     </div>
   );
