@@ -16,10 +16,9 @@ const Loader: React.FC = () => {
       <div className="relative w-40 h-40 mb-6">
         {/* DSRV Logo with water effect */}
         <div className="text-6xl font-bold text-center relative overflow-hidden">
-          <span className="text-dsrv-blue">D</span>
-          <span className="text-dsrv-green">S</span>
-          <span className="text-dsrv-blue">R</span>
-          <span className="text-dsrv-green">V</span>
+
+
+          <img src="logo.png" alt="logo" />
           
           {/* Water filling effect */}
           <div 

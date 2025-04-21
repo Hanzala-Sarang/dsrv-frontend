@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import './bubbles.css';
+import ImageSection from './ImageSection';
 
 const ProductSection: React.FC = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -46,7 +47,7 @@ const ProductSection: React.FC = () => {
     },
     {
       name: "Dhomore Liquid Detergent",
-      image: "/Dhomore product.png",
+      image: "liquid detergent.webp",
       description:
         "Dissolves quickly in water, removing tough stains and dirt while protecting fabric color and softness.",
       features: [
@@ -60,8 +61,8 @@ const ProductSection: React.FC = () => {
       badge: "Advanced Formula",
     },
     {
-      name: "Dhomore Mosquito Incense Stick",
-      image: "/Dhomore product.png",
+      name: "Loowit Mosquito Incense Stick",
+      image: "/agarbatti.webp",
       description:
         "Offers long-lasting protection from mosquitoes with a pleasant natural aroma.",
       features: [
@@ -95,7 +96,7 @@ const ProductSection: React.FC = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl font-bold text-white text-center mb-12">Our Products</h2>
 
-        <div className="grid gap-12 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
           {products.map((product, index) => (
             <div
               key={index}
@@ -103,11 +104,11 @@ const ProductSection: React.FC = () => {
               className="opacity-0 translate-y-8 transition-all duration-1000"
             >
               <div className="relative bg-white rounded-3xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col h-full">
-                <div className="relative">
+                <div className="relative w-full">
                   <img
                     src={product.image}
                     alt={product.name}
-                    className="w-full h-60 object-cover"
+                    className="w-full h-60 sm:h-64 md:h-72 object-contain bg-white"
                   />
                   <span className={`absolute top-4 left-4 bg-white px-3 py-1 rounded-full text-xs font-semibold shadow ${product.color}`}>
                     {product.badge}

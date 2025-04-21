@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
-import Logo from './Logo';
 import { cn } from '@/lib/utils';
 
 const Navbar: React.FC = () => {
@@ -41,7 +40,7 @@ const Navbar: React.FC = () => {
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="relative z-50">
-          <Logo />
+        <img src="logo.png" alt="logo" height={100} width={100}/>
         </Link>
 
         {/* Desktop Navigation */}
