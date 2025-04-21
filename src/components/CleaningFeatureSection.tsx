@@ -1,5 +1,4 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import { Sparkles, Eraser, Feather } from 'lucide-react';
 
 const CleaningFeatureSection: React.FC = () => {
@@ -7,29 +6,17 @@ const CleaningFeatureSection: React.FC = () => {
     <section className="w-full py-16 bg-[#00B2A9]">
       <div className="max-w-7xl mx-auto px-4 sm:px-8 flex flex-col md:flex-row items-center gap-12">
         
-        {/* Image with animation */}
-        <motion.div
-          className="w-full md:w-1/2"
-          initial={{ opacity: 0, x: -60 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.7 }}
-          viewport={{ once: true }}
-        >
+        {/* Image Section */}
+        <div className="w-full md:w-1/2">
           <img
             src="tshirt stain.webp" // Replace with your actual image path
             alt="Stain Removal Comparison"
             className="w-full rounded-2xl shadow-2xl object-cover"
           />
-        </motion.div>
+        </div>
 
-        {/* Text content with animation */}
-        <motion.div
-          className="w-full md:w-1/2 text-white space-y-6"
-          initial={{ opacity: 0, x: 60 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.7, delay: 0.2 }}
-          viewport={{ once: true }}
-        >
+        {/* Text content */}
+        <div className="w-full md:w-1/2 text-white space-y-6">
           <h2 className="text-3xl md:text-4xl font-bold leading-tight">
             Choose Based on Your Needs
           </h2>
@@ -59,7 +46,7 @@ const CleaningFeatureSection: React.FC = () => {
               </div>
             </li>
           </ul>
-        </motion.div>
+        </div>
       </div>
     </section>
   );
