@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef, useState } from 'react';
 import FeatureCard from './FeatureCard';
 import ImageSection from './ImageSection';
@@ -87,22 +86,30 @@ const FeatureSection: React.FC = () => {
 
   return (
     <section ref={sectionRef} className="py-20 bg-white relative overflow-hidden">
-      {/* Background decoration */}
-
-      <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">Why Choose Dhomore Detergent?</h2>
+      {/* Banner Image */}
       <ImageSection src='rmtbanner.webp' alt="rmtbanner" />
+
+      {/* Tagline under banner */}
+      <div className="container mx-auto px-4 mt-8">
+        <p className="text-xl md:text-2xl text-center text-gray-700 font-medium leading-relaxed">
+          Our advanced formula combines powerful cleaning with fabric care to deliver exceptional results every time.
+        </p>
+      </div>
+
+      {/* Background decoration */}
       <div className="absolute top-0 left-0 w-full h-20 bg-wave-pattern opacity-5"></div>
       <div className="absolute bottom-0 left-0 w-full h-20 bg-wave-pattern opacity-5"></div>
-      <div className="container mx-auto px-4">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <p className="text-lg text-gray-600">
-            Our advanced formula combines powerful cleaning with fabric care to deliver exceptional results every time.
-          </p>
-        </div>
-        
+
+      {/* Title */}
+      <div className="container mx-auto px-4 mt-16">
+        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+          Why Choose Dhomore Detergent?
+        </h2>
+
+        {/* Features */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (
-            <div 
+            <div
               key={index}
               className={`opacity-0 translate-y-8 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : ''}`}
               style={{ transitionDelay: `${index * 100}ms` }}
