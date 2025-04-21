@@ -8,7 +8,7 @@ import FeatureSection from '@/components/FeatureSection';
 import AboutSection from '@/components/AboutSection';
 import Footer from '@/components/Footer';
 import ImageSection from '@/components/ImageSection';
-import CleaningFeatureSection from '@/components/CleaningFeatureSection';
+// import CleaningFeatureSection from '@/components/CleaningFeatureSection';
 
 const Index = () => {
   const [loading, setLoading] = useState(true);
@@ -35,7 +35,6 @@ const Index = () => {
         <ProductSection />
         <ImageSection src="rmtbanner.webp" alt="rmtbanner"/>
         <FeatureSection />
-        <CleaningFeatureSection />
         <ImageSection src="frmtbanner.webp" alt="frmtbanner"/>
         <AboutSection />
       </main>

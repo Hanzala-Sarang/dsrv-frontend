@@ -1,33 +1,9 @@
 import React, { useEffect, useRef } from 'react';
 import './bubbles.css';
-import ImageSection from './ImageSection';
 
 const ProductSection: React.FC = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
-  const itemsRef = useRef<Array<HTMLDivElement | null>>([]);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry, index) => {
-          if (entry.isIntersecting && itemsRef.current[index]) {
-            itemsRef.current[index]!.classList.add('opacity-100', 'translate-y-0');
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-
-    itemsRef.current.forEach((item) => {
-      if (item) observer.observe(item);
-
-      return () => {
-        itemsRef.current.forEach((item) => {
-          if (item) observer.unobserve(item);
-        });
-      };
-    });
-  }, []);
+  const itemsRef = useRef<(HTMLDivElement | null)[]>([]);
 
   const products = [
     {
@@ -77,16 +53,38 @@ const ProductSection: React.FC = () => {
     },
   ];
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const target = entry.target as HTMLDivElement;
+          if (entry.isIntersecting) {
+            target.classList.add('opacity-100', 'translate-y-0');
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    itemsRef.current.forEach((item) => {
+      if (item) observer.observe(item);
+    });
+
+    return () => {
+      itemsRef.current.forEach((item) => {
+        if (item) observer.unobserve(item);
+      });
+    };
+  }, []);
+
   return (
     <section ref={sectionRef} className="relative py-20 bg-[#00B2A9] overflow-hidden">
-      {/* Left Bubbles */}
+      {/* Bubbles */}
       <div className="bubble-group left-bubbles">
         <div className="bubble"></div>
         <div className="bubble"></div>
         <div className="bubble"></div>
       </div>
-
-      {/* Right Bubbles */}
       <div className="bubble-group right-bubbles">
         <div className="bubble"></div>
         <div className="bubble"></div>
