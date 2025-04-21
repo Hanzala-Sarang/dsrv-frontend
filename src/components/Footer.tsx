@@ -26,6 +26,7 @@ const Footer: React.FC = () => {
             <Link to="/" className="inline-block mb-6">
               <img src="logo.png" alt="footer logo" height={150} width={150} />
             </Link>
+            <h1>Manufacturing & Trading</h1>
             <p className="text-gray-600 mb-6">
               Premium quality detergent for a superior cleaning experience. Dhomore keeps your clothes fresh, bright, and stain-free.
             </p>
@@ -147,11 +148,9 @@ const Footer: React.FC = () => {
       </a>
     </p>
   </div>
+</div>      
 </div>
-
-        
-      </div>
-    </footer>
+</footer>
   );
 };
 

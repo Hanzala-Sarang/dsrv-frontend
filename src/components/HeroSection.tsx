@@ -29,8 +29,7 @@ const HeroSection: React.FC = () => {
               src="/dhomore.webp"
               alt="DSRV Detergent Powder"
               className="relative z-30  object-contain drop-shadow-xl transition-transform duration-700 ease-out animate-pop"
-              height={400}
-              width={350}
+              width={400}
             />
 
             {/* Optional Glow Background */}

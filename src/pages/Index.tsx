@@ -9,6 +9,7 @@ import AboutSection from '@/components/AboutSection';
 import Footer from '@/components/Footer';
 import ImageSection from '@/components/ImageSection';
 import CleaningFeatureSection from '@/components/CleaningFeatureSection';
+import DhomoreIntro from '@/components/DhomoreIntro';
 
 const Index = () => {
   const [loading, setLoading] = useState(true);
@@ -33,10 +34,10 @@ const Index = () => {
         <HeroSection />
         <ImageSection src="irmtbanner.webp" alt="irmtbanner"/>
         <ProductSection />
-        <ImageSection src="rmtbanner.webp" alt="rmtbanner"/>
         <FeatureSection />
         <CleaningFeatureSection />
         <ImageSection src="frmtbanner.webp" alt="frmtbanner"/>
+        <DhomoreIntro />
         <AboutSection />
       </main>
       <Footer />

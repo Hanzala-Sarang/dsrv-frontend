@@ -7,7 +7,7 @@ interface ImageSectionProps {
 
 const ImageSection: React.FC<ImageSectionProps> = ({ src, alt }) => {
   return (
-    <section className="w-full py-12">
+    <section className="w-full py-4">
       <div className="max-w-9xl mx-auto px-4 sm:px-8">
         <div className="relative overflow-hidden rounded-xl shadow-xl border border-white mb-8">
           <img

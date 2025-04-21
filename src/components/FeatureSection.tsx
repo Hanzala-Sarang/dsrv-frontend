@@ -1,6 +1,7 @@
 
 import React, { useEffect, useRef, useState } from 'react';
 import FeatureCard from './FeatureCard';
+import ImageSection from './ImageSection';
 
 const FeatureSection: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -87,12 +88,13 @@ const FeatureSection: React.FC = () => {
   return (
     <section ref={sectionRef} className="py-20 bg-white relative overflow-hidden">
       {/* Background decoration */}
+
+      <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">Why Choose Dhomore Detergent?</h2>
+      <ImageSection src='rmtbanner.webp' alt="rmtbanner" />
       <div className="absolute top-0 left-0 w-full h-20 bg-wave-pattern opacity-5"></div>
       <div className="absolute bottom-0 left-0 w-full h-20 bg-wave-pattern opacity-5"></div>
-      
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Why Choose Dhomore Detergent?</h2>
           <p className="text-lg text-gray-600">
             Our advanced formula combines powerful cleaning with fabric care to deliver exceptional results every time.
           </p>
