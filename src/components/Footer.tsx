@@ -27,8 +27,8 @@ const Footer: React.FC = () => {
               <img src="logo.png" alt="footer logo" height={150} width={150} />
             </Link>
             <h1>Manufacturing & Trading</h1>
-            <p className="text-gray-600 mb-6">
-              Premium quality detergent for a superior cleaning experience. Dhomore keeps your clothes fresh, bright, and stain-free.
+            <p className="text-gray-600 mb-6 text-justify">
+            A leading manufacturing company committed to delivering high-quality, reliable, and innovative products. With advanced technology, skilled professionals, and strict quality control, we've focused on precision, performance, and customer satisfaction, making us a trusted partner in the manufacturing sector.
             </p>
             <div className="flex space-x-4">
               {/* Social icons */}
@@ -122,8 +122,8 @@ const Footer: React.FC = () => {
                   </svg>
                 </div>
                 <div>
-                  <a href="mailto:sales.dsrv.in" className="text-gray-600 hover:text-dsrv-blue">
-                    sales.dsrv.in
+                  <a href="mailto:sales@dsrv.in" className="text-gray-600 hover:text-dsrv-blue">
+                    sales@dsrv.in
                   </a>
                 </div>
               </li>

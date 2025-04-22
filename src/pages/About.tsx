@@ -211,7 +211,7 @@ const About = () => {
                 <div>
                   <h3 className="text-xl font-semibold mb-2 text-gray-800">Contact</h3>
                   <p className="text-gray-600">
-                    Email: <a href="mailto:sales.dsrv.in" className="text-dsrv-blue hover:underline">sales.dsrv.in</a>
+                    Email: <a href="mailto:sales@dsrv.in" className="text-dsrv-blue hover:underline">sales@dsrv.in</a>
                   </p>
                 </div>
               </div>

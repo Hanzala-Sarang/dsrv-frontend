@@ -50,15 +50,9 @@ const AboutSection: React.FC = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Our Mission</h2>
 
           <p className="text-lg text-white/90 mb-8 leading-relaxed">
-            At Dhomore, we believe that clean clothes shouldn't come at the expense of your fabrics or the environment.
-            That's why we've developed a detergent formula that's tough on stains but gentle on everything else.
+          At "DSRV" our mission is to deliver exceptional manufacturing solutions that drive innovation, ensure quality, and empower industries worldwide. We are committed to producing high-performance products through cutting-edge technology, sustainable practices, and a deep dedication to excellence in every step of our process.
           </p>
 
-          <p className="text-lg text-white/90 mb-8 leading-relaxed">
-            Our commitment to quality means we invest in research and innovation to continually improve our products,
-            ensuring you get the best cleaning experience possible. We're dedicated to creating products that make your
-            laundry routine easier, more efficient, and more environmentally responsible.
-          </p>
 
           <div className="flex flex-col md:flex-row justify-center gap-6 mt-12">
             {/* Card 1 */}
