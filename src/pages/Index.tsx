@@ -11,6 +11,7 @@ import ImageSection from '@/components/ImageSection';
 import CleaningFeatureSection from '@/components/CleaningFeatureSection';
 import DhomoreIntro from '@/components/DhomoreIntro';
 import ImageCarousel from '@/components/ImageCarousel';
+import WhatsAppChat from '@/components/WhatsApp';
 
 const Index = () => {
   const [loading, setLoading] = useState(true);
@@ -42,6 +43,7 @@ const Index = () => {
         <DhomoreIntro />
         <AboutSection />
       </main>
+      <WhatsAppChat />
       <Footer />
     </div>
   );

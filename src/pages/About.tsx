@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { cn } from '@/lib/utils';
+import WhatsAppChat from '@/components/WhatsApp';
 
 const About = () => {
   const [loaded, setLoaded] = useState(false);
@@ -229,7 +230,7 @@ const About = () => {
           </div>
         </div>
       </section>
-            
+      <WhatsAppChat />
       <Footer />
     </div>
   );

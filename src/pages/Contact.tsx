@@ -4,6 +4,7 @@ import Footer from '@/components/Footer';
 import ContactForm from '@/components/ContactForm';
 import FeedbackForm from '@/components/FeedbackForm';
 import { cn } from '@/lib/utils';
+import WhatsAppChat from '@/components/WhatsApp';
 
 const Contact = () => {
     const [loaded, setLoaded] = useState(false);
@@ -167,7 +168,7 @@ const Contact = () => {
                     </div>
                 </div>
             </section>
-
+            <WhatsAppChat />
             <Footer />
         </div>
     );
