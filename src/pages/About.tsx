@@ -197,14 +197,15 @@ const About = () => {
                   </p>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2 text-gray-800">International Address (Africa)</h3>
+                  <h3 className="text-xl font-semibold mb-2 text-gray-800">International Address (Africa Ghana)</h3>
                   <p className="text-gray-600">
 
                     DSRV & Co.<br />
                     AQ78 NII ADJEI SANKUMA <br />
                     ST GZ0746180<br />
                     NR TESHIE MALIK ROUNDBOUT<br/>
-                    ACCRA ACCRA
+                    ACCRA ACCRA <br />
+                    Ghana
                   </p>
                 </div>
 

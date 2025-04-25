@@ -78,9 +78,9 @@ const Footer: React.FC = () => {
             <h4 className="text-lg font-semibold mb-4">Products</h4>
             <ul className="space-y-2">
               {[
-                'DSRV Detergent Powder',
-                'DSRV Liquid Detergent',
-                'DSRV Mosquito Incense Stick'
+                'Detergent Powder',
+                'Liquid Detergent',
+                'Mosquito Incense Stick'
               ].map((item, index) => (
                 <li key={index}>
                   <a 
@@ -135,17 +135,6 @@ const Footer: React.FC = () => {
   <div className="max-w-7xl mx-auto px-4 py-6 sm:px-6 lg:px-8">
     <p className="text-center text-sm text-gray-600">
       &copy; {currentYear} <span className="font-semibold text-gray-800">DSRV & Co.</span> All rights reserved.
-    </p>
-    <p className="text-center text-sm text-gray-600 mt-2">
-      Developed with <span className="text-red-500">❤️</span> by{" "}
-      <a
-        href="https://www.nextgrid.solutions"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-[#00B2A9] font-medium hover:underline hover:text-[#008d85] transition-colors"
-      >
-        nextgrid.solutions
-      </a>
     </p>
   </div>
 </div>      

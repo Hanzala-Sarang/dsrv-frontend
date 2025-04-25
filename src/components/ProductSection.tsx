@@ -105,11 +105,7 @@ const ProductSection: React.FC = () => {
                 <div className="relative w-full bg-white flex flex-col justify-center items-center p-4 sm:p-6">
                   {/* Badge placed above the image with margin */}
                   <span
-                    className={`mb-4 self-start px-3 py-1 text-xs sm:text-sm rounded-full font-semibold shadow ${
-                      product.badge === "Premium Quality"
-                        ? "bg-[#00B2A9] text-white"
-                        : "bg-white " + product.color
-                    }`}
+                    className={"mb-4 self-start px-3 py-1 text-xs sm:text-sm rounded-full font-semibold shadow bg-[#00B2A9] text-white"}
                   >
                     {product.badge}
                   </span>

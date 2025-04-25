@@ -85,13 +85,14 @@ const Contact = () => {
                                                 </div>
                                             </div>
 
-                                            <h4 className="text-lg font-semibold mb-1 text-white">International Address (Africa)</h4>
+                                            <h4 className="text-lg font-semibold mb-1 text-white">International Address (Africa Ghana)</h4>
                                             <p className="text-white/90 text-sm mb-2">
                                                 DSRV & Co.<br />
                                                 AQ78 NII ADJEI SANKUMA<br />
                                                 ST GZ0746180<br />
                                                 NR TESHIE MALIK ROUNDBOUT<br />
-                                                ACCRA ACCRA
+                                                ACCRA ACCRA <br />
+                                                Ghana
                                             </p>
                                             {/* Africa Phone */}
                                             <div className="flex items-start text-white/90 text-sm">

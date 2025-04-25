@@ -166,8 +166,8 @@ const ContactForm: React.FC = () => {
         <div className="mt-8">
           <p className="text-sm text-gray-500">
             You can also reach us directly at{" "}
-            <a href="mailto:sales.dsrv.in" className="text-dsrv-blue font-medium hover:underline">
-              sales.dsrv.in
+            <a href="mailto:sales@dsrv.in" className="text-dsrv-blue font-medium hover:underline">
+              sales@dsrv.in
             </a>
           </p>
         </div>

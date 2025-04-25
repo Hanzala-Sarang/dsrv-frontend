@@ -10,6 +10,7 @@ import Footer from '@/components/Footer';
 import ImageSection from '@/components/ImageSection';
 import CleaningFeatureSection from '@/components/CleaningFeatureSection';
 import DhomoreIntro from '@/components/DhomoreIntro';
+import ImageCarousel from '@/components/ImageCarousel';
 
 const Index = () => {
   const [loading, setLoading] = useState(true);
@@ -32,6 +33,7 @@ const Index = () => {
       <Navbar />
       <main >
         <HeroSection />
+        <ImageCarousel images={['Dhomore product.png', 'liquid detergent.webp', 'agarbatti.webp']}/>
         <ImageSection src="irmtbanner.webp" alt="irmtbanner"/>
         <ProductSection />
         <FeatureSection />
