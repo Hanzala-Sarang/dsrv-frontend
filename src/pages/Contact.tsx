@@ -68,8 +68,8 @@ const Contact = () => {
                                             </svg>
                                         </div>
                                         <div>
-                                <div className="w-14 h-14 bg-white rounded-full overflow-hidden flex items-center absolute left-72 top-24 justify-center">
-                                                <img src="/logo.png" alt="DSRV Logo" className="object-contain w-10 h-10" />
+                                <div className="w-40 h-40  rounded-full overflow-hidden flex items-center absolute left-60 top-10 justify-center">
+                                                <img src="dsrv-logo.png" alt="DSRV Logo" className="object-contain w-full h-full" />
                                 </div>
                                         <h4 className="text-lg font-semibold mb-1 text-white">Our Address (India)</h4>
                                         <div className="flex items-center space-x-2">
