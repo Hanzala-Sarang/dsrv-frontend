@@ -191,6 +191,7 @@ const About = () => {
                 <div>
                   <h3 className="text-xl font-semibold mb-2 text-gray-800">Address</h3>
                   <p className="text-gray-600">
+                    India <br />
                     DSRV & Co.<br />
                     PO & PS Dankuni coal complex<br />
                     Village-kharial<br />
@@ -201,7 +202,7 @@ const About = () => {
                   <h3 className="text-xl font-semibold mb-2 text-gray-800">International Address (Africa Ghana)</h3>
                   <p className="text-gray-600">
 
-                    DSRV & Co.<br />
+                    Equator Essential Enterprise LTD.<br />
                     AQ78 NII ADJEI SANKUMA <br />
                     ST GZ0746180<br />
                     NR TESHIE MALIK ROUNDBOUT<br/>

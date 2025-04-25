@@ -2,7 +2,7 @@ import React from 'react';
 import { FaWhatsapp } from 'react-icons/fa';
 
 const WhatsAppChat = () => {
-  const phoneNumber = '919874306372'; // Replace with your business number (in international format)
+  const phoneNumber = '919836729903'; // Replace with your business number (in international format)
   const initialMessage = 'Hello! I would like to know more about your products.'; 
 
   return (
